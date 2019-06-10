@@ -118,3 +118,8 @@
 -keep public class * extends plugin.google.maps.MyPlugin
 -keepclassmembers public class plugin.google.maps.GoogleMaps {*; }
 -keepclassmembers public class * extends plugin.google.maps.MyPlugin { *; }
+
+# Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+
+# OkHttp platform used only on JVM and when Conscrypt dependency is available.
