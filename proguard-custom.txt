@@ -17,9 +17,9 @@
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
 # class:
-#-keepclassmembers class android.webkit.WebView {
-#   public *;
-#}
+-keepclassmembers class com.ionicframework.cordova.webview {
+   public *;
+}
 
 #-injars      bin/classes
 #-injars      libs
