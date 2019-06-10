@@ -17,9 +17,9 @@
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
 # class:
--keepclassmembers class com.ionicframework.cordova.webview {
-   public *;
-}
+#-keepclassmembers class com.ionicframework.cordova.webview {
+#   public *;
+#}
 
 #-injars      bin/classes
 #-injars      libs
@@ -111,6 +111,10 @@
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
 
+
+# These clases contain references to cordova webView
+-keep class com.ionicframework.cordova.webview.** { ; }
+-keep class com.ionicframework.cordova.webview.*
 
 # These clases contain references to google maps
 
