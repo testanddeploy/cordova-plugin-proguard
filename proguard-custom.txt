@@ -128,3 +128,10 @@
 
 # OkHttp platform used only on JVM and when Conscrypt dependency is available.
 -dontwarn okhttp3.internal.platform.ConscryptPlatform
+
+# These clases contain references to Mobbeel
+-keep class com.mobbeel.mobbscan.** { *; }
+-keep class org.spongycastle.** { *; }
+-keep class org.gradiant.biometrics.** { *; }
+
+
