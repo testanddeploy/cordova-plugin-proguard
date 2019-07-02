@@ -132,6 +132,7 @@
 # These clases contain references to Mobbeel
 -keepattributes *Annotation*, Exceptions, Deprecated, Signature, MethodParameters, InnerClasses
 -keepparameternames
+-keep class com.mobbeel.** { *; }
 
 ## Rules for Retrofit2
 -dontwarn org.codehaus.**
