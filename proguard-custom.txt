@@ -129,6 +129,7 @@
 # OkHttp platform used only on JVM and when Conscrypt dependency is available.
 -keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
 -dontwarn okhttp3.internal.platform.ConscryptPlatform
+-keep class okhttp3.Headers { *; }
 
 # These clases contain references to Mobbeel
 -keepattributes *Annotation*, Exceptions, Deprecated, Signature, MethodParameters, InnerClasses
