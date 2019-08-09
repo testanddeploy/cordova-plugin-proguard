@@ -127,8 +127,9 @@
 -dontwarn org.codehaus.mojo.animal_sniffer.*
 
 # OkHttp platform used only on JVM and when Conscrypt dependency is available.
--dontwarn okhttp3.internal.platform.ConscryptPlatform
--keep class okhttp3.internal.Internal.** { *; }
+-keep class okhttp3.* { ; }
+-keep interface okhttp3.* { ; }
+-dontwarn okhttp3.
 
 # These clases contain references to Mobbeel
 -keepattributes *Annotation*, Exceptions, Deprecated, Signature, MethodParameters, InnerClasses
