@@ -53,6 +53,8 @@
 # Enable proguard with Cordova
 -keep class org.apache.cordova.** { *; }
 -keep public class * extends org.apache.cordova.CordovaPlugin
+-keep class android.content.res.XmlResourcePars
+-keep class android.content.pm.Providerinfo.loadXmlMetaData
 
 -keep class com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader { java.lang.ClassLoader sClassLoader; }
 -keep class com.google.android.gms.dynamite.descriptors.com.google.android.gms.flags.ModuleDescriptor { int MODULE_VERSION; }
