@@ -53,6 +53,7 @@
 # Enable proguard with Cordova
 -keep class org.apache.cordova.** { *; }
 -keep public class * extends org.apache.cordova.CordovaPlugin
+-keep class com.**.BuildConfig { *; }
 -keep class android.content.res.XmlResourcePars
 -keep class android.content.pm.Providerinfo.loadXmlMetaData
 
