@@ -134,4 +134,4 @@
 
 # These clases contain references to Biometrics Manager on Android
 
--keep class android.hardware.biometrics.** { *; }
+-dontwarn com.exxbrain.android.biometric.*
